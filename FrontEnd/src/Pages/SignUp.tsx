@@ -37,14 +37,14 @@ export function SignUp() {
 
 
     return (
-        <div className="h-screen w-screen bg-gray-200 flex justify-center items-center">
-            <div className="bg-white rounded-xl border min-w-48 p-8">
+        <div className="h-screen w-screen bg-gray-500 flex justify-center items-center">
+            <div className="bg-black rounded-xl border min-w-48 p-8">
                 <Input reference={usernameRef} placeholder="Username" />
                 <Input reference={passwordRef} placeholder="Password" />
                 <div className="flex justify-center pt-4">
                     <Button onclick={signup} loding={false} variant="primary" text={'SignUp'} fullwidth={true} />
                 </div>
-                <p className="font-normal pt-2 text-sm pl-3">
+                <p className="font-normal pt-2 text-sm pl-3 text-white">
                 Already have an Account? <Link className="text-blue-600" to="/signin">SignIn</Link>
                 </p>
             </div>

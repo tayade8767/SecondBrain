@@ -38,7 +38,7 @@ app.post("/api/v1/signup",async (req,res) => {
                 .regex(/[A-Z]/, { message: "Password must include at least one Upper letter" })
                 .regex(/[a-z]/, { message: "Password must include at least one Lower letter" })
                 .regex(/[0-9]/, { message: "Password must include at least one Number" })
-                .regex(/[@$!%*?&#]/, { message: "Password must include at least one special character (@$!%*?&#)." });
+                .regex(/[@$!%?&#]/, { message: "Password must include at least one special character (@$!%?&#)." });
     
     try {
 
